@@ -1,0 +1,7 @@
+Public class Sommets {
+ 
+    private String label = null;
+    private Map<sommets, arrets> arrets = new HashMap<>();
+    private boolean isVisited = false;
+ 
+}
