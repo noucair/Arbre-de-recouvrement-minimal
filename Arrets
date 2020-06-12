@@ -1,0 +1,6 @@
+public class Arrets {
+ 
+    private int weight;
+    private boolean isIncluded = false;
+ 
+}
