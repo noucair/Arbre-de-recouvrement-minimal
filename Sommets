@@ -1,7 +1,6 @@
-Public class Sommets {
- 
-    private String label = null;
-    private Map<sommets, arrets> arrets = new HashMap<>();
-    private boolean Visited = false;
- 
+ public class Sommets {
+    String label;
+    Sommets(String label) {
+        this.label = label;
+    }
 }
