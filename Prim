@@ -1,0 +1,52 @@
+package alPRIM;
+
+import java.util.Scanner;
+
+
+public class Prim {
+	
+	static Scanner scan;
+	public static String a;
+	public static int b;
+	public static int [][] graph;
+	public static int [] L;
+	public static int c;
+	public static int n;
+	public static int m;
+	public static int total;
+  
+	public static void main(String[] args){
+		
+		scan = new Scanner(System.in);
+		
+		System.out.println("Veuillez entrer le nombres des sommets dans votre graphe");
+		
+		a = scan.nextLine();
+		
+        b = Integer.parseInt(a);
+        
+	    graph = new int [b][b]; // le graphe 
+	    L = new int [b]; // liste des sommets passè par l'algorithme pas à pas
+	    
+	    System.out.println("Veuillez entrer le poids entre les sommets de ce graphe");
+       for(int i = 0; i < b; i++){
+			for(int j = 0; j < b; j++){
+				
+				if (  i==j) {
+					graph[i][j]=0;
+				}
+				else {
+		    	   System.out.println("Le poids du bord: "+i+" -> "+j+"");
+
+				graph[i][j] = scan.nextInt();
+				}
+				
+				if(graph[i][j]==0){
+					
+					graph[i][j] = Integer.MAX_VALUE;
+					
+				}
+				
+			}
+			
+		}
